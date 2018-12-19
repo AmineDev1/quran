@@ -9,10 +9,10 @@ const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '*';
+const prefix = 'Q';
 
 client.on('message', message => {
-	if(message.content.startsWith(prefix + 'قرآن')) {
+	if(message.content.startsWith(prefix + 'play')) {
 		message.delete();
     const voiceChannel = message.member.voiceChannel;
     if (!voiceChannel) return message.reply(`**يحب ان تكون في روم صوتي**`);
@@ -20,7 +20,7 @@ client.on('message', message => {
 	let embed = new Discord.RichEmbed()
     .setAuthor(`${message.author.tag}`, message.author.avatarURL)
 	.setColor('#000000')
-	.setFooter("بوت القرآن | صدقة جارية للجميع", 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqVT5PZAfcy8qZxlr3SQv3mmCw9zPiu2YBLIQ4bBePL2jLm7h')
+	.setFooter("United Gaming | Quran", 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqVT5PZAfcy8qZxlr3SQv3mmCw9zPiu2YBLIQ4bBePL2jLm7h')
       .setDescription(` 
      🕋 اوامر بوت القرآن الكريم 🕋
 	 
