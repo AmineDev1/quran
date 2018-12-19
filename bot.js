@@ -177,4 +177,6 @@ collector7.on('collect', r => {
 })
 }
 });
-client.login("Token | التوكن");
+
+
+client.login(process.env.BOT_TOKEN);
